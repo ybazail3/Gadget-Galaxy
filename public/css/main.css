@@ -27,12 +27,6 @@ img#banner {
     width:100%;
 }
 
-img.team-img {
-    float: left;
-    height: 150px;
-    border-radius: 100px;
-}
-
 main.wrapper { 
     background-color: #2C2B30;
     overflow: auto;
