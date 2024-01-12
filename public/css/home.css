@@ -2,6 +2,7 @@
 
 html {
     background-color: #ffffff;
+    background-image: url("../images/homebg.jpg");
     color: rgb(21, 10, 138);
     font-family: 'Raleway', sans-serif;;
     font-size: 0.95em;
@@ -14,12 +15,14 @@ header {
 
 ::selection {
     color: #D6D6D6; 
+    background: #4F4F51;
 }
 
 h1 {
     font-weight: normal;
     margin: auto;
     line-height: 2.5em;
+    color: rgb(21, 10, 138);
 }
 
 img#banner {
@@ -27,14 +30,8 @@ img#banner {
     width:100%;
 }
 
-img.team-img {
-    float: left;
-    height: 150px;
-    border-radius: 100px;
-}
-
 main.wrapper { 
-    background-color: #2C2B30;
+    background-color: rgb(21, 10, 138);
     overflow: auto;
 }
 
@@ -54,8 +51,8 @@ a {
 }
 
 a:hover {
-    color: whitesmoke;
-    background-color: rgb(21, 10, 138);
+    color: #fff;
+    background-color:rgba(21, 10, 138, 0.311);
     text-decoration: none;
 }
 

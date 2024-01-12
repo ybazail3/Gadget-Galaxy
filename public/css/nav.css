@@ -1,11 +1,11 @@
 /* Global rules */
 .topnav {
     margin: auto;
-    background-color: #f5aa7c;
     overflow: auto;
 }
 
 .topnav a {
+    float: inline;
     float: left;
     display: block;
     color: whitesmoke;
@@ -14,11 +14,12 @@
     text-decoration: none;
     text-transform: capitalize;
     font-size: 16px;
+    color: rgb(21, 10, 138);
 }
 
-.topnav a.hover, .active {
+/* .topnav a.hover, .active {
     background-color: #f5aa7c;
-}
+} */
 
 .topnav .icon {
     display: none;
