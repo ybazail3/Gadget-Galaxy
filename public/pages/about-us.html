@@ -1,63 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Team</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/team.css" />
 </head>
+
 <body>
     <h1>Our Team</h1>
-    <h4>Name</h4>
-    <img src="../images/">
-    <p>Short summary</p>
-    <ul>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-    </ul>
-    <h4>Yazmin</h4>
-    <img src="../images/yazmin.jpg">
-    <p>Short summary</p>
-    <ul>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-    </ul>
-    <h4>Selma</h4>
-    <img src="../images/Selmas.jpg">
-    <p>As a Year Up student studying Application Development. I am self-driven and committed to self-awareness. Beyond learning more about coding, I embrace creativity, finding joy in bringing unique ideas to life. Family is my core motivation and source of strength. With a foundation in application development, I am super excited to make a positive impact in the evolving world of technology.</p>
-    <ul>
-        <li>Cooking</li>
-        <li>Painting</li>
-        <li>Hosting Game Nights</li>
-    </ul>
-    <h4>Name</h4>
-    <img src="../images/">
-    <p>Short summary</p>
-    <ul>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-    </ul>
-    <h4>Name</h4>
-    <img src="../images/">
-    <p>Short summary</p>
-    <ul>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-        <li>List hobbies?</li>
-    </ul>
-    <footer>
-        <p>
-          <small>&copy; 2021-<span id="this-year"></span> by Group 2, All
-            Rights Reserved ~
-            <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
-            <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+    <nav class="topnav" id="myTopnav">
+        <!-- <a href="index.html" class="active">Gadget Galaxy</a> -->
+        <a href="index.html" class="active">Home</a>
+        <a href="../pages/about-us.html" target="_blank">Our Team</a>
+        <a href="#" target="_blank">Our Products</a>
+        <a href="#" target="_blank">Deals Of The Day</a>
+        <a href="#" target="_blank">Sign Up</a>
+        <a href="#" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <input type="text" placeholder="Search.." />
+    </nav>
+    <h2>Our Team</h2>
+    <div class="team">
+        <!-- Created h4 element for names. Also created src and class attribute for image/team-img. -->
+        <h4>Hamzah</h4>
+        <img class="team-img" src="../images/hamzah.jpg" />
+        <p>My name is Hamzah. I'm currently a Year Up student who's developing an academic career in software
+            development. Through my past experience in this field I'm looking forward to creating higher level
+            programming skills with this education. My unique value is that I have the ability to understand complex
+            problems and break it down well enough to visualize the solution in a simplistic way. My goal is to become a
+            successful front-end developer and land a job at an advanced tech company where I can be financially stable.
         </p>
-      </footer>
-    
+        <!-- Created a ul for the list of hobbies. -->
+        <ul>Hobbies:
+            <li>Coding</li>
+            <li>Basketball player</li>
+            <li>Gaming</li>
+        </ul>
+    </div>
+    <div class="team">
+        <!-- Created h4 element for names. Also created src and class attribute for image/team-img. -->
+        <h4>Yazmin</h4>
+        <img class="team-img" src="../images/yazmin.jpg" />
+        <p>
+            My name is Yazmin I am a current Year Up student and aspiring Software
+            Developer. I am familiar with HTML, CSS, and JavaScript. And currently
+            learning Python. With these skills, I am hoping to land a job in the
+            tech industry. One thing I love about computer programming is the
+            satisfaction of seeing a project completed. It can be challenging, but I
+            like pushing myself. This allows me to learn more about myself and my
+            perseverance.
+        </p>
+        <!-- Created a ul for the list of hobbies. -->
+        <ul>Hobbies:
+            <li>True crime</li>
+            <li>Reading</li>
+        </ul>
+    </div>
+    <div class="team">
+        <!-- Created h4 element for names. Also created src and class attribute for image/team-img. -->
+        <h4>Selma</h4>
+        <img class="team-img" src="../images/Selmas.jpg">
+        <p>My name Is Selma. As a Year Up student studying Application Development. I am self-driven and committed to
+            self-awareness. Beyond learning more about coding, I embrace creativity, finding joy in bringing unique
+            ideas to life. Family is my core motivation and source of strength. With a foundation in application
+            development, I am super excited to make a positive impact in the evolving world of technology.</p>
+        <ul>
+            <li>Cooking</li>
+            <li>Painting</li>
+            <li>Hosting Game Nights</li>
+        </ul>
+    </div>
+    <div class="team">
+        <!-- Created h4 element for names. Also created src and class attribute for image/team-img. -->
+        <h4>Jonathan</h4>
+        <img class="team-img" class="team-img" src="../images/jonathan.jpeg" />
+        <p>
+            My name is Jonathan and I am currently a student at Year Up with the dream of becoming a software developer.
+            With my current experience, I am looking to further improve and expand my skill set to become the ideal
+            candidate
+            and land a job in the industry. I am hoping to implement Java and Python with my business experience in
+            Salesforce.
+        </p>
+        <!-- Created a ul for the list of hobbies. -->
+        <ul>Hobbies:
+            <li>Fitness</li>
+            <li>Gaming</li>
+            <li>Wrestling</li>
+        </ul>
+    </div>
+    <div class="team">
+        <!-- Created h4 element for names. Also created src and class attribute for image/team-img. -->
+        <h4>Name</h4>
+        <img class="team-img" class="team-img" src="../images/" />
+        <p>Short summary</p>
+        <!-- Created a ul for the list of hobbies. -->
+        <ul>
+            <li>List hobbies?</li>
+            <li>List hobbies?</li>
+            <li>List hobbies?</li>
+        </ul>
+    </div>
+    <footer>
+        <!-- Copyright info -->
+        <p>
+            <small>&copy; 2021-<span id="this-year"></span> by Group 2, All Rights
+                Reserved ~
+                <a id="html-checker" href="#" target="_blank">Check HTML</a> ~
+                <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+        </p>
+    </footer>
+    <!-- Linked JS file to HTML web page. -->
+    <script src="../scripts/app.js"></script>
 </body>
+
 </html>

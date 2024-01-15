@@ -1,0 +1,122 @@
+/* Global rules */
+
+html {
+    background-color: #ffffff;
+    background-image: url("../images/homebg.jpg");
+    color: rgb(21, 10, 138);
+    font-family: 'Raleway', sans-serif;;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+header {
+    justify-content: center;
+}
+
+::selection {
+    color: #D6D6D6; 
+    background: #4F4F51;
+}
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    line-height: 2.5em;
+    color: rgb(21, 10, 138);
+}
+
+img#banner {
+    display: block;
+    width:100%;
+}
+
+main.wrapper { 
+    background-color: rgb(21, 10, 138);
+    overflow: auto;
+}
+
+p {
+    margin: 1em; /* Top Right Bottom Left (TRBL) */
+}
+
+h2,h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+a {
+    color: rgb(21, 10, 138);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    background-color:rgba(21, 10, 138, 0.311);
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 100%;
+    }
+    
+}
