@@ -65,6 +65,11 @@ footer {
     color: #fff;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
 /* Responsive rules */
 
 /* DESKTOP */
