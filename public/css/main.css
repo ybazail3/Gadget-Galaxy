@@ -1,11 +1,12 @@
 /* Global rules */
 
 html {
-    background-color: #f5f5f5;
-    color: #333;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    line-height: 1.6em;
+    background-color: #ffffff;
+    background-image: url("../images/homebg.jpg");
+    color: rgb(21, 10, 138);
+    font-family: 'Raleway', sans-serif;;
+    font-size: 0.95em;
+    line-height: 1.5em;
 }
 
 /* header {
@@ -24,7 +25,7 @@ h1 {
     margin: 0 auto;
     padding: 1em;
 }
-
+  
 /* img#banner {
     display: block;
     width: 100%;
@@ -47,13 +48,13 @@ h2, h3 {
 }
 
 a {
-    color: #e74c3c;
+    color: #a312dd;
     text-decoration: none;
 }
 
 a:hover {
     color: #fff;
-    background-color: #e74c3c;
+    background-color: #a312dd;
     text-decoration: none;
 }
 
