@@ -31,3 +31,10 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+//reference to the button element
+var myButton = document.getElementById("myButton");
+
+//event listener for button
+myButton.addEventListener("click", function() {
+});
