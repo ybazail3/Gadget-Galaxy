@@ -9,6 +9,20 @@ html {
     line-height: 1.5em;
 }
 
+body-light {
+    background: #fff;
+    color: rgb(21, 10, 138);
+    /* --btnBg: var(--pink);
+    --btnFontColor: var(--rgb(0, 0, 0)); */
+}
+
+body-dark {
+    background: rgb(21, 10, 138);
+    color: #fff;
+    /* --btnBg: var(--pink);
+    --btnFontColor: var(--#fff); */
+}
+
 header {
     justify-content: center;
 }
@@ -54,6 +68,11 @@ a:hover {
     color: #fff;
     background-color:rgba(21, 10, 138, 0.311);
     text-decoration: none;
+    border-radius: 20px;
+}
+
+a#logo:hover {
+    background-color:rgba(23, 13, 140, 0);
 }
 
 footer {

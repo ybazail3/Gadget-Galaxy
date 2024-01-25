@@ -32,9 +32,26 @@ function myFunction() {
   }
 }
 
-//reference to the button element
-var myButton = document.getElementById("myButton");
+// //reference to the button element
+// var myButton = document.getElementById("myButton");
 
-//event listener for button
-myButton.addEventListener("click", function() {
+// //event listener for button
+// myButton.addEventListener("click", function() {
+// });
+
+// Creating an object named theme and getting the id theme for the button
+const theme = document.querySelector('#theme');
+
+switcher.addEventListener('click', function() {
+    document.body.classList.toggle('light-html');
+    document.body.classList.toggle('dark-html');
+
+    const className = document.body.className;
+    if(className == "light-html") {
+        this.textContent = "Dark";
+    } else {
+        this.textContent = "Light";
+    }
+
+    // console.log('current class name: ' + className);
 });
