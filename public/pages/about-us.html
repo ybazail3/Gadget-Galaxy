@@ -2,34 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Team</title>
-    <link rel="icon" href="../images/logo copy.png"/>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/nav.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget Galaxy</title>
+    <link rel="icon" href="../images/logo copy.png" />
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/team.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <nav class="topnav" id="myTopnav">
-        <a href="../../index.html" class="active"><img src="../images/logo.png" height="80" width="200"></a>
-        <a href="../pages/about-us.html">Our Team</a>
-        <a href="#">Our Products</a>
-        <a href="../pages/sale.html">Deals Of The Day</a>
-        <a href="#">Sign Up</a>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-        <form class="example" action="#">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </nav>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" height="110" width="220"></a>
+            <a href="../pages/about-us.html">Our Team</a>
+            <a href="#">Our Products</a>
+            <a href="../pages/sale.html">Deals Of The Day</a>
+            <a href="#">Sign Up</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <form class="example" action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit" id="search"><i class="fa fa-search"></i></button>
+            </form>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+    </header>
     <h2>Our Team</h2>
     <div class="team">
         <!-- Created h4 element for names. Also created src and class attribute for image/team-img. -->
@@ -112,15 +116,13 @@
         </ul>
     </div>
     <footer>
-        <!-- Copyright info -->
         <p>
-            <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights
-                Reserved ~
+            <small>&copy; 2024-<span id="this-year"></span> by Group 2, All
+                Rights Reserved ~
                 <a id="html-checker" href="#">Check HTML</a> ~
                 <a id="css-checker" href="#">Check CSS</a></small>
         </p>
     </footer>
-    <!-- Linked JS file to HTML web page. -->
     <script src="../scripts/app.js"></script>
 </body>
 

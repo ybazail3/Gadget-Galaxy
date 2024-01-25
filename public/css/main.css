@@ -9,11 +9,11 @@ html {
     line-height: 1.5em;
 }
 
-/* header {
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+}
 
 ::selection {
     color: #fff;
@@ -55,14 +55,51 @@ a {
 
 a:hover {
     color: #fff;
-    background-color:rgba(21, 10, 138, 0.311);
+    background-color:rgb(21, 10, 138);
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 a#logo:hover {
     background-color:rgba(23, 13, 140, 0);
+    border: none;
 }
+
+button#theme {
+    background-color:rgb(21, 10, 138);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+    font-size: medium;
+    padding: 5px;
+    border: none;
+}
+
+button#theme:hover {
+    background-color:#fff;
+    color: rgb(21, 10, 138);
+    border: none;
+}
+
+form {
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+  }
+
+  button#search{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  input {
+    border: none;
+    outline: none; 
+    width: 100%;
+  }
 
 footer {
     clear: both;
