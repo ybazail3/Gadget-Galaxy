@@ -102,7 +102,7 @@ button:hover {
     border: none;
 }
 
-form {
+form.search {
     border: none;
     background-color: #fff;
     border-radius: 20px;
