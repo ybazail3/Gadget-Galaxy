@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gadget Galaxy</title>
-    <link rel="icon" href="../images/logo copy.png" />
-    <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../images/logo-copy.png" />
+    <link id="nav-stylesheet" rel="stylesheet" href="../css/nav.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/sale.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,22 +20,23 @@
 
 <body class="light-theme">
     <header>
+        <a href="../../index.html" class="active" id="logo"><img id="logo-img" src="../images/logo.png" height="80" width="200"></a>    
         <nav class="topnav" id="myTopnav">
-            <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" height="110" width="220"></a>
+            <a href="../../index.html">Home</a>
             <a href="../pages/about-us.html">Our Team</a>
-            <a href="#">Our Products</a>
+            <a href="../pages/products.html">Our Products</a>
             <a href="../pages/sale.html">Deals Of The Day</a>
-            <a href="#">Sign Up</a>
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="../pages/signup.html">Sign Up</a>
+            <a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             <div><button id="theme">Theme</button></div>
-            <form class="example" action="#">
-                <input type="text" placeholder="Search.." name="search">
+            <form class="search" action="#">
+                <input type="text" placeholder="Search" name="search">
                 <button type="submit" id="search"><i class="fa fa-search"></i></button>
             </form>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
     </header>
-    <h2>Deals Of The Day</h2>
+    <h1>Deals Of The Day</h1>
     <!-- Created a div for the audio element. Created a caption for the title of the song and the musician. The autoplay attribute is for the 
     music to start playing when the user navigates to it & the muted attribute is that the music is muted until user changes to unmute.
     We added a path to our audio file. Line 38 is if the browser does not support the audio element it will display that text instead. -->
@@ -47,44 +49,65 @@
     </div>
     <!-- Created a table for "events" coming up. We decided to create a sales page for our e-commerce website. The table has all 7 days of
     the week with images and prices. -->
+    <div class="deals-page">
+        <div>
+            <h1 id="saleFlash">Today's Deal:</h1>
+            <img src="../images/tablet.png" height="500" width="600">
+            <p>Galaxy Tablet 3</p>
+            <div><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>Free Delivery <br>$150.00<br>Save $100 Was: $250.00<br><i class="fa-solid fa-stopwatch"></i> Deal ends at midnight</p>
+        </div>
+        <div>
     <table>
-        <tr>This weeks deals:
+        <tr class="deals-table">
+            <h2>This weeks deals:</h2>
             <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-            <th>Sunday</th>
-        </tr>
-        <tr>
             <th><img class="tablet-img" src="../images/tablet.png"></th>
-            <th><img class="watch-img" src="../images/apple watch.jpg"></th>
-            <th><img class="earbud-img" src="../images/earpods.jpg"></th>
-            <th><img class="smartv-img" src="../images/smarttv.jpg"></th>
-            <th><img class="laptop-img" src="../images/laptop.jpg"></th>
-            <th><img class="google-img" src="../images/googlephone.jpg"></th>
-            <th><img class="iphone-img" src="../images/iphone.jpg"></th>
-        </tr>
-        <tr>
             <td>Galaxy Tablet 3 Save $100</td>
+            <th>Tuesday</th>
+            <th><img class="watch-img" src="../images/apple watch.jpg"></th>
             <td>Apple Watch Save $130</td>
+            <th>Wednesday</th>
+            <th><img class="earbud-img" src="../images/earpods.jpg"></th>
             <td>Beats Earbuds Save $45</td>
+            <th>Thursday</th>
+            <th><img class="smartv-img" src="../images/smarttv.jpg"></th>
             <td>Smart TV Save $120</td>
+            <th>Friday</th>
+            <th><img class="laptop-img" src="../images/laptop.jpg"></th>
             <td>HP Laptop Save $130</td>
+            <th>Saturday</th>
+            <th><img class="google-img" src="../images/googlephone.jpg"></th>
             <td>Google Phone Save $50</td>
+            <th>Sunday</th>
+            <th><img class="iphone-img" src="../images/iphone.jpg"></th>
             <td>iPhone Save $40</td>
         </tr>
     </table>
+    </div>
+    </div>
+
     <footer>
-        <p>
-            <small>&copy; 2024-<span id="this-year"></span> by Group 2, All
-                Rights Reserved ~
-                <a id="html-checker" href="#">Check HTML</a> ~
-                <a id="css-checker" href="#">Check CSS</a></small>
-        </p>
+        <div class="flex-footer">ORDERS
+            <a href="#">Tracking</a>
+            <a href="#">Returns</a>
+          </div>
+          <div class="flex-footer">ABOUT
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Our Team</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="flex-footer">LEGAL
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <p class="flex-footer">
+            <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights Reserved
+          </p>
     </footer>
-    <script src="../scripts/app.js"></script>
+    <script src="../scripts/copyright.js"></script>
+    <script src="../scripts/pages-theme.js"></script>
 </body>
 
 </html>

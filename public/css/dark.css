@@ -7,14 +7,9 @@ html {
 }
 
 body {
-    background-image: url("../images/homebg.jpg");
-    color: #2F356D;
-}
-/* 
-.dark-theme {
     background-color: #2F356D;
     color: #fff;
-} */
+}
 
 header {
     display: flex;
@@ -40,7 +35,7 @@ h1 {
 } */
 
 main.wrapper {
-    background-color: #f5f5f5;
+    background-color: #2F356D;
     overflow: auto;
     padding: 1em;
 }
@@ -56,25 +51,16 @@ h2, h3 {
 }
 
 a {
-    color: #a412dd9a;
+    color: #e1a6ff;
     text-decoration: none;
 }
 
-a.light-nav:hover {
-    color: #fff;
-    background-color:#2F356D;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-a.dark-nav:hover {
+a:hover {
     color: #2F356D;
     background-color:#fff;
     text-decoration: none;
     border-radius: 10px;
 }
-
-
 
 a#logo:hover {
     background-color:#2f356d00;
@@ -82,8 +68,8 @@ a#logo:hover {
 }
 
 button#theme {
-    background-color:#2F356D;
-    color: white;
+    background-color:#fff;
+    color: #2F356D;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 10px;
     font-size: medium;
@@ -98,20 +84,20 @@ button#theme:hover {
 }
 
 button {
-    background-color:#2F356D;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-}
-
-button:hover {
     background-color:#fff;
     color: #2F356D;
     border-radius: 5px;
     border: none;
 }
 
-form.search {
+button:hover {
+    background-color:#2F356D;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+form {
     border: none;
     background-color: #fff;
     border-radius: 20px;
@@ -161,11 +147,10 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     justify-items: center;
-    align-self: flex-end;
     clear: both;
     text-align: center;
     padding: 30px;
-    color: #2F356D;
+    color: #fff;
 }
 
 .flex-footer {
@@ -236,4 +221,3 @@ table, th, td {
         margin: 0;
     }
 }
-

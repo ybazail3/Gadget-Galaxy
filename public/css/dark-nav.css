@@ -1,5 +1,4 @@
 /* Global rules */
-
 .topnav {
     margin: auto;
     overflow: auto;
@@ -11,13 +10,13 @@
 
 .topnav a {
     display: flex;
-    color: #fff;
+    color: #2F356D;
     text-align: center;
     padding: 15px 15px;
     text-decoration: none;
     text-transform: capitalize;
     font-size: 16px;
-    color: #2F356D;
+    color: #fff;
 }
 
 /* .topnav a.hover, .active {
