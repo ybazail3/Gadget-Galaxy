@@ -32,26 +32,24 @@ function myFunction() {
   }
 }
 
-// //reference to the button element
-// var myButton = document.getElementById("myButton");
+'use strict';
 
-// //event listener for button
-// myButton.addEventListener("click", function() {
-// });
+document.addEventListener('DOMContentLoaded', function () {
+  const themeStylesheet = document.querySelector('#theme-stylesheet');
+  const themeButton = document.querySelector('#theme');
 
-// Creating an object named theme and getting the id theme for the button
-const theme = document.querySelector('#theme');
+  themeButton.addEventListener('click', function () {
+    document.body.classList.toggle('dark');
 
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('light-html');
-    document.body.classList.toggle('dark-html');
+    const isDarkTheme = document.body.classList.contains('dark');
+    themeButton.innerHTML = isDarkTheme ? 'Light' : 'Dark';
 
-    const className = document.body.className;
-    if(className == "light-html") {
-        this.textContent = "Dark";
+    if (isDarkTheme) {
+      themeStylesheet.href = 'public/css/dark.css';
+      document.querySelector('#nav-stylesheet').href = 'public/css/dark-nav.css';
     } else {
-        this.textContent = "Light";
+      themeStylesheet.href = 'public/css/main.css';
+      document.querySelector('#nav-stylesheet').href = 'public/css/nav.css';
     }
-
-    // console.log('current class name: ' + className);
+  });
 });
