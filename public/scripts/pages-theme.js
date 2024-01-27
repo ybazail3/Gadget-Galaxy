@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
     themeButton.innerHTML = isDarkTheme ? 'Light' : 'Dark';
 
     if (isDarkTheme) {
-      themeStylesheet.href = 'public/css/dark.css';
-      document.querySelector('#nav-stylesheet').href = 'public/css/dark-nav.css';
-      logoImage.src = 'public/images/logo-dark.png'; // Change the image source
+      themeStylesheet.href = '../css/dark.css';
+      document.querySelector('#nav-stylesheet').href = '../css/dark-nav.css';
+      logoImage.src = '../images/logo-dark.png'; // Change the image source
     } else {
-      themeStylesheet.href = 'public/css/main.css';
-      document.querySelector('#nav-stylesheet').href = 'public/css/nav.css';
-      logoImage.src = 'public/images/logo.png'; // Change the image source back to the original
+      themeStylesheet.href = '../css/main.css';
+      document.querySelector('#nav-stylesheet').href = '../css/nav.css';
+      logoImage.src = '../images/logo.png'; // Change the image source back to the original
     }
   });
 });
