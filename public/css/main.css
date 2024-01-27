@@ -169,7 +169,7 @@ table, th, td {
     border-collapse: collapse;
   }
 
-  #dealsflash{
+#dealsflash{
     animation:blink;
     animation-duration:2s;
     animation-timing-function: ease-in;
@@ -182,7 +182,7 @@ table, th, td {
     62%{   color: transparent; }
     97%{   color:transparent; }
     100%{  color: #000;   }
-    }
+}
 /* Responsive rules */
 
 /* DESKTOP */
