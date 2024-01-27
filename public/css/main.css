@@ -56,7 +56,7 @@ h2, h3 {
 }
 
 a {
-    color: #a312dd;
+    color: #a412dd9a;
     text-decoration: none;
 }
 
@@ -110,10 +110,19 @@ form {
   }
 
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
     clear: both;
     text-align: center;
-    padding: 1em;
+    padding: 30px;
     color: #2F356D;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
 }
 
 table, th, td {
