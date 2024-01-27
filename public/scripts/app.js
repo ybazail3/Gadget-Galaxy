@@ -40,18 +40,18 @@ function myFunction() {
 // });
 
 // Creating an object named theme and getting the id theme for the button
-const theme = document.querySelector('#theme');
+let theme = document.querySelector('#theme');
 
-switcher.addEventListener('click', function() {
-    document.body.classList.toggle('light-html');
-    document.body.classList.toggle('dark-html');
+theme.addEventListener('click', function () {
+  document.body.classList.toggle('light-theme');
+  document.body.classList.toggle('dark-theme');
+  const className = document.body.className;
+  if (className.includes('light-theme')) {
+    this.innerHTML = "Light";
+    console.log("Light");
+  } else {
+    this.innerHTML = "Dark";
 
-    const className = document.body.className;
-    if(className == "light-html") {
-        this.textContent = "Dark";
-    } else {
-        this.textContent = "Light";
-    }
-
-    // console.log('current class name: ' + className);
+    console.log("Dark");
+  }
 });

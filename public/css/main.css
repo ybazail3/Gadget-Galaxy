@@ -1,12 +1,21 @@
 /* Global rules */
 
 html {
-    background-color: #ffffff;
+    background-color: #fff;
     background-image: url("../images/homebg.jpg");
-    color: rgb(21, 10, 138);
+    color: #2F356D;
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
+}
+
+.light-theme {
+    color: #2F356D;
+}
+
+.dark-theme {
+    background-color: #2F356D;
+    color: #fff;
 }
 
 header {
@@ -48,25 +57,34 @@ h2, h3 {
     line-height: 1.2em;
 }
 
-a {
+/* a {
     color: #a312dd;
     text-decoration: none;
-}
+} */
 
-a:hover {
+a.light-nav:hover {
     color: #fff;
-    background-color:rgb(21, 10, 138);
+    background-color:#2F356D;
     text-decoration: none;
     border-radius: 10px;
 }
 
+a.dark-nav:hover {
+    color: #2F356D;
+    background-color:#fff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+
 a#logo:hover {
-    background-color:rgba(23, 13, 140, 0);
+    background-color:#2f356d00;
     border: none;
 }
 
 button#theme {
-    background-color:rgb(21, 10, 138);
+    background-color:#2F356D;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 10px;
@@ -77,7 +95,7 @@ button#theme {
 
 button#theme:hover {
     background-color:#fff;
-    color: rgb(21, 10, 138);
+    color: #2F356D;
     border: none;
 }
 
@@ -110,7 +128,7 @@ footer {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #2F356D;
     border-collapse: collapse;
   }
 
