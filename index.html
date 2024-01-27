@@ -6,18 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gadget Galaxy</title>
-  <link rel="icon" href="public/images/logo copy.png"/>
+  <link rel="icon" href="public/images/logo copy.png" />
   <link id="nav-stylesheet" rel="stylesheet" href="public/css/nav.css">
   <link id="theme-stylesheet" rel="stylesheet" href="public/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
 </head>
 
 <!--added logo styling to move the logo to the left of the pages-->
 <style>
-  .logo{
+  .logo {
     width: 30px;
     height: 30px;
     margin-right: auto;
@@ -26,7 +28,7 @@
 
 <body>
   <header>
-    <a href="index.html"  id="logo"><img src="public/images/logo.png" id="logo-img" alt=logo height="80" width="200"></a>
+    <a href="index.html" id="logo"><img src="public/images/logo.png" id="logo-img" alt=logo height="80" width="200"></a>
     <nav class="topnav" id="myTopnav">
       <a href="index.html">Home</a>
       <a href="public/pages/about-us.html">Our Team</a>
@@ -43,20 +45,30 @@
     </nav>
   </header>
   <div>
-    <p>Louder & More Clearly</p>
-    <p>With the latest technology that produces clearer sound and louder bass.</p>
+    <h1>Louder & More Clearly</h1>
+    <h2>With the latest technology that produces clearer sound and louder bass.</h2>
     <img src="public/images/Gadget Galaxy_mainpagehead.jpg" width="400" height="500">
     <div><button>See Details</button></div>
     <div><button>More New Products</button></div>
   </div>
   <footer>
-    <p>
-      <small>&copy; 2024-<span id="this-year"></span> by Group 2, All
-        Rights Reserved ~
-        <a id="html-checker" href="#">Check HTML</a> ~
-        <a id="css-checker" href="#">Check CSS</a></small>
-    </p>
-  </footer>
+    <div class="flex-footer">ORDERS
+        <a href="#">Returns</a>
+      </div>
+      <div class="flex-footer">ABOUT
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Team</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="flex-footer">LEGAL
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p class="flex-footer">
+        <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights Reserved
+      </p>
+</footer>
   <script src="public/scripts/app.js"></script>
   <script src="public/scripts/copyright.js"></script>
 </body>

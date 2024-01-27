@@ -51,7 +51,7 @@ h2, h3 {
 }
 
 a {
-    color: #a312dd;
+    color: #e1a6ff;
     text-decoration: none;
 }
 
@@ -83,6 +83,20 @@ button#theme:hover {
     border: none;
 }
 
+button {
+    background-color:#fff;
+    color: #2F356D;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    background-color:#2F356D;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
 form {
     border: none;
     background-color: #fff;
@@ -104,15 +118,35 @@ form {
     width: 100%;
   }
 
+  .deals-page {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .deals-table {
+    display: flex;
+    flex-direction: column;
+  }
+
 footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
     clear: both;
     text-align: center;
-    padding: 1em;
+    padding: 30px;
     color: #fff;
 }
 
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+}
+
 table, th, td {
-    border: 1px solid black;
+    border: none;
     border-collapse: collapse;
   }
 

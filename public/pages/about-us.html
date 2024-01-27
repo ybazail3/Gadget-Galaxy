@@ -22,7 +22,7 @@
     <header>
         <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" id="logo-img" height="80" width="200"></a>    
         <nav class="topnav" id="myTopnav"> 
-            <a href="index.html">Home</a>  
+            <a href="../../index.html">Home</a>  
             <a href="../pages/about-us.html">Our Team</a>
             <a href="#">Our Products</a>
             <a href="../pages/sale.html">Deals Of The Day</a>
@@ -30,7 +30,7 @@
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
             <div><button id="theme">Theme</button></div>
             <form class="example" action="#">
-                <input type="text" placeholder="Search.." name="search">
+                <input type="text" placeholder="Search" name="search">
                 <button type="submit" id="search"><i class="fa fa-search"></i></button>
             </form>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -118,12 +118,22 @@
         </ul>
     </div>
     <footer>
-        <p>
-            <small>&copy; 2024-<span id="this-year"></span> by Group 2, All
-                Rights Reserved ~
-                <a id="html-checker" href="#">Check HTML</a> ~
-                <a id="css-checker" href="#">Check CSS</a></small>
-        </p>
+        <div class="flex-footer">ORDERS
+            <a href="#">Returns</a>
+          </div>
+          <div class="flex-footer">ABOUT
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Our Team</a>
+            <a href="#">Careers</a>
+          </div>
+          <div class="flex-footer">LEGAL
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <p class="flex-footer">
+            <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights Reserved
+          </p>
     </footer>
     <script src="../scripts/copyright.js"></script>
     <script src="../scripts/pages-theme.js"></script>
