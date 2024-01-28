@@ -10,11 +10,6 @@ body {
     background-image: url("../images/homebg.jpg");
     color: #2F356D;
 }
-/* 
-.dark-theme {
-    background-color: #2F356D;
-    color: #fff;
-} */
 
 header {
     display: flex;
@@ -33,11 +28,6 @@ h1 {
     margin: 0 auto;
     padding: 1em;
 }
-  
-/* img#banner {
-    display: block;
-    width: 100%;
-} */
 
 main.wrapper {
     background-color: #f5f5f5;
