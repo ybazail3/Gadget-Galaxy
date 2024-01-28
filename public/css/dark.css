@@ -163,6 +163,20 @@ table, th, td {
     border-collapse: collapse;
   }
 
+#dealsflash{
+    animation:blink;
+    animation-duration:2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0%{   color: red;   }
+    47%{   color: red; }
+    62%{   color: transparent; }
+    97%{   color:transparent; }
+    100%{  color: #000;   }
+}
 /* Responsive rules */
 
 /* DESKTOP */
