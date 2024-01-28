@@ -11,10 +11,11 @@ form.signup {
     display: flex;
     justify-content: center;
     align-self: center;
-    width: auto;
+    width: 400px;
     background-color: #fff;
     border-radius: 1%;
 }
+
 
 /* Full-width input fields */
   input.signup[type=text], input[type=password] {
