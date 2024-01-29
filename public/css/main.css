@@ -9,12 +9,11 @@ html {
 body {
     background-image: url("../images/homebg.jpg");
     color: #2F356D;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-/* 
-.dark-theme {
-    background-color: #2F356D;
-    color: #fff;
-} */
 
 header {
     display: flex;
@@ -33,11 +32,6 @@ h1 {
     margin: 0 auto;
     padding: 1em;
 }
-  
-/* img#banner {
-    display: block;
-    width: 100%;
-} */
 
 main.wrapper {
     background-color: #f5f5f5;
@@ -49,18 +43,12 @@ p {
     margin: 1em 0;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-weight: bold;
     margin-left: 0;
     line-height: 1.2em;
 }
-
-/* a.dark-nav:hover {
-    color: #2F356D;
-    background-color:#fff;
-    text-decoration: none;
-    border-radius: 10px;
-} */
 
 a {
     color: #a412dd9a;
@@ -71,7 +59,7 @@ a {
 
 a:hover {
     color: #fff;
-    background-color:#2F356D;
+    background-color: #2F356D;
     text-decoration: none;
     padding: 5px;
     border-radius: 10px;
@@ -83,7 +71,7 @@ a span {
     left: 0;
     width: 100%;
     height: 90%;
-    background-color:rgb(21, 10, 138);
+    background-color: rgb(21, 10, 138);
     z-index: -1;
     border-bottom: 2px solid #fff;
     border-radius: 10px;
@@ -92,18 +80,18 @@ a span {
     transition: .5s;
 }
 
-a:hover span{
+a:hover span {
     transform: scale(1) translateY(0);
     opacity: 1;
 }
 
 a#logo:hover {
-    background-color:#2f356d00;
+    background-color: #2f356d00;
     border: none;
 }
 
 button#theme {
-    background-color:#2F356D;
+    background-color: #2F356D;
     color: white;
     font-family: 'Ubuntu', sans-serif;
     border-radius: 10px;
@@ -113,21 +101,21 @@ button#theme {
 }
 
 button#theme:hover {
-    background-color:#2F356D;
+    background-color: #2F356D;
     color: white;
     border: none;
     padding: 0px;
 }
 
 button {
-    background-color:#2F356D;
+    background-color: #2F356D;
     color: #fff;
     border-radius: 5px;
     border: none;
 }
 
 button:hover {
-    background-color:#fff;
+    background-color: #fff;
     color: #2F356D;
     border-radius: 5px;
     border: none;
@@ -139,66 +127,82 @@ form.search {
     border-radius: 20px;
     padding: 5px;
     display: flex;
-  }
+}
 
-  button#search{
+button#search {
     background-color: transparent;
     border: none;
     cursor: pointer;
     color: #2F356D;
-  }
+}
 
-  @keyframes jumpAnimation {
-    0% { transform: translateY(0); }
-    25% { transform: translateY(-20px); }
-    50% { transform: translateY(0); }
-    75% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-  }
+@keyframes jumpAnimation {
+    0% {
+        transform: translateY(0);
+    }
 
-  #id1:hover {
-    animation: jumpAnimation 1s infinite; /* Apply the animation */
-    transition: transform 0.3s ease-out; /* Add a smooth transition effect */
-  }
+    25% {
+        transform: translateY(-20px);
+    }
 
-  input {
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#id1:hover {
+    animation: jumpAnimation 1s infinite;
+    /* Apply the animation */
+    transition: transform 0.3s ease-out;
+    /* Add a smooth transition effect */
+}
+
+input {
     border: none;
-    outline: none; 
+    outline: none;
     width: 100%;
-  }
+}
 
-  .deals-page {
+.deals-page {
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .deals-table {
+.deals-table {
     display: flex;
     flex-direction: column;
-  }
+}
 
- div.preview {
+div.preview {
     display: flex;
     justify-content: space-around;
-  }
+}
 
-  div.main-section{
+div.main-section {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-  }
+}
 
-  .one {
+.one {
     font-size: 80px;
     line-height: 1.1;
     font-weight: 350;
-  }
+}
 
-  .two {
+.two {
     font-size: 30px;
     line-height: 1;
     padding-left: 40px;
-  }
+}
 
 img.three {
     display: flex;
@@ -206,17 +210,14 @@ img.three {
 }
 
 footer {
-    /* position: fixed; */
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    justify-items: center;
-    align-self: flex-end;
-    clear: both;
+    align-items: center;
     text-align: center;
     padding: 30px;
     color: #2F356D;
+    background-color: #e887ea38;
 }
 
 .flex-footer {
@@ -224,25 +225,42 @@ footer {
     flex-direction: column;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: none;
     border-collapse: collapse;
-  }
+}
 
-#dealsflash{
-    animation:blink;
-    animation-duration:2s;
+#dealsflash {
+    animation: blink;
+    animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
 
-@keyframes blink{
-    0%{   color: red;   }
-    47%{   color: red; }
-    62%{   color: transparent; }
-    97%{   color:transparent; }
-    100%{  color: #000;   }
+@keyframes blink {
+    0% {
+        color: red;
+    }
+
+    47% {
+        color: red;
+    }
+
+    62% {
+        color: transparent;
+    }
+
+    97% {
+        color: transparent;
+    }
+
+    100% {
+        color: #000;
+    }
 }
+
 /* Responsive rules */
 
 /* DESKTOP */
