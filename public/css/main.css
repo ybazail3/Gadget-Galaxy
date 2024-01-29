@@ -188,6 +188,18 @@ form.search {
     flex-direction: row;
   }
 
+  .one {
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: 350;
+  }
+
+  .two {
+    font-size: 30px;
+    line-height: 1;
+    padding-left: 40px;
+  }
+
 img.three {
     display: flex;
     justify-content: left;
