@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/su-form.css">
     <link id="nav-stylesheet" rel="stylesheet" href="../css/nav.css">
     <link id="theme-stylesheet" rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/team.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +20,12 @@
 
 <body>
     <header>
-        <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" id="logo-img" height="80"
-                width="200"></a>
+        <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" id="logo-img" height="80" width="200""></a>
         <nav class="topnav" id="myTopnav">
             <a href="../../index.html">Home<span></span></a>
             <a href="../pages/about-us.html">Our Team<span></span></a>
             <a href="../pages/products.html">Our Products<span></span></a>
-            <a href="../pages/sale.html">Deals Of The Day<span></span></a>
+            <a href="../pages/sale.html" id="dealsflash">Deals Of The Day<span></span></a>
             <a href="../pages/signup.html">Sign Up<span></span></a>
             <a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i><span></span></a>
             <a><div><button id="theme">Theme</button></div><span></span></a>
@@ -42,7 +40,6 @@
     <form class="signup" action="action_page.php">
         <div class="container">
           <h1>Sign Up</h1>
-          <p>Fill out form</p>
           <hr>
       
           <label class="signup" for="email"><b>Email</b></label>
@@ -63,6 +60,27 @@
           <div class="clearfix">
             <button class="signup" type="button" class="cancelbtn">Cancel</button>
             <button class="signup" type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+      <form class="signup" class="login" action="action_page.php">
+        <div class="container">
+          <h1>Log In</h1>
+          <hr>
+      
+          <label class="signup" for="email"><b>Email</b></label>
+          <input class="signup" type="text" placeholder="Enter Email" name="email" required>
+      
+          <label class="signup" for="psw"><b>Password</b></label>
+          <input  class="signup" type="password" placeholder="Enter Password" name="psw" required>
+      
+          <label class="signup">
+            <input class="signup" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+          <div class="clearfix">
+            <button class="signup" type="button" class="cancelbtn">Cancel</button>
+            <button class="signup" type="submit" class="signupbtn">Log In</button>
           </div>
         </div>
       </form>
