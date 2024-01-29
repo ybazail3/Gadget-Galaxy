@@ -177,6 +177,22 @@ form.search {
     flex-direction: column;
   }
 
+ div.preview {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  div.main-section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+img.three {
+    display: flex;
+    justify-content: left;
+}
+
 footer {
     /* position: fixed; */
     width: 100%;

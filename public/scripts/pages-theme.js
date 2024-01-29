@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const themeButton = document.querySelector('#theme');
   const logoImage = document.querySelector('#logo-img');
 
+  // Added event listener to toggle in between light and dark
   themeButton.addEventListener('click', function () {
     document.body.classList.toggle('dark');
 
-    const isDarkTheme = document.body.classList.contains('dark');
-    themeButton.innerHTML = isDarkTheme ? 'Light' : 'Dark';
+    const dTheme = document.body.classList.contains('dark');
+    themeButton.innerHTML = dTheme ? 'Light' : 'Dark';
 
-    if (isDarkTheme) {
+     // if statement is the theme contains dark then use dark css else use main css which is light mode
+    if (dTheme) {
       themeStylesheet.href = '../css/dark.css';
       document.querySelector('#nav-stylesheet').href = '../css/dark-nav.css';
       logoImage.src = '../images/logo-dark.png'; // Change the image source
