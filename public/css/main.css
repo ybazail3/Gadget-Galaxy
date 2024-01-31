@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: url("../images/homebg.jpg");
+    background-image: url("../images/lightmode_background.png");
     color: #2F356D;
     margin: 0;
     display: flex;
