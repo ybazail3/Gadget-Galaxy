@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-color: #2F356D;
+    background-image: url("../images/darkmode_background.png");
     color: #fff;
     margin: 0;
     display: flex;
