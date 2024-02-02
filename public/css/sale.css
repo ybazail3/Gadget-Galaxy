@@ -12,3 +12,21 @@
     97%{   color:transparent; }
     100%{  color: #000;   }
     }
+
+    .text1 {
+        display: inline;
+        font-size: 60px;
+        line-height: 1.5;
+        font-weight: 300;
+    }
+    
+    .text2 {
+        font-size: 30px;
+        line-height: 0;
+    }
+
+    .tablet-sales {
+        display: block;
+        width: 60%;
+        margin: auto;
+    }
