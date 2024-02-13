@@ -83,3 +83,17 @@
         width: 700px;
         margin-top: -380px;
     }
+
+    @media screen and (min-width: 800px) {
+        .deals-table {
+          flex-direction: column;
+          padding: 1rem 0;
+          scroll-snap-type: y mandatory;
+          overflow-y: scroll;
+          height: 450px;
+        }
+      
+        .table-item {
+          scroll-snap-align: start;
+        }
+      }
