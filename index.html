@@ -19,6 +19,27 @@
 
 <!--added logo styling to move the logo to the left of the pages-->
 <style>
+    div.gallery {
+      margin: 5px;
+      float: left;
+      width: 180px;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #a412dd9a;
+      border-radius: 25px;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+    
   .logo {
     width: 30px;
     height: 30px;
@@ -44,31 +65,7 @@
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
   </header>
-
-  <style>
-    div.gallery {
-      margin: 5px;
-      float: left;
-      width: 180px;
-    }
-    
-    div.gallery:hover {
-      border: 1px solid #a412dd9a;
-      border-radius: 25px;
-    }
-    
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-    
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-    </style>
-    </head>
-    <body>
+  
       <div class="main-section">
         <div id="text">
     <h1 class="one">Louder & More Clearly</h1>
@@ -118,7 +115,7 @@
       <p class="flex-footer">
         <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights Reserved
       </p>
-</footer>
+  </footer>
   <script src="public/scripts/app.js"></script>
   <script src="public/scripts/copyright.js"></script>
 </body>

@@ -50,6 +50,7 @@ button.signup {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  transition: .5s;
 }
 
 button.signup:hover {
@@ -57,9 +58,16 @@ button.signup:hover {
 }
 
 /* Extra styles for the cancel button */
-.cancelbtn {
-  background-color: #5d5d5db9;
+button.cancelbtn {
+  background-color: rgb(146, 137, 137);
+  color: #fff;
   padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  transition: .5s;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -74,11 +82,11 @@ button.signup:hover {
 }
 
 /* Clear floats */
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   clear: both;
   display: table;
-}
+}*/
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
