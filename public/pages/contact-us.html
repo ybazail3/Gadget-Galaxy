@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gadget Galaxy</title>
     <link rel="icon" href="../images/logo-copy.png" />
+    <link rel="stylesheet" href="../css/contact.css">
     <link id="nav-stylesheet" rel="stylesheet" href="../css/nav.css">
     <link id="theme-stylesheet" rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -16,19 +17,10 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap"
         rel="stylesheet">
 </head>
-<style>
-    .gallery{
-        margin-bottom: 15rem;
-        gap: 50px;
-display: flex;
-flex-wrap: wrap;
-}
-</style>
 
 <body>
     <header>
-        <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" id="logo-img" height="80"
-                width="200"></a>
+        <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" id="logo-img" height="80" width="200""></a>
         <nav class="topnav" id="myTopnav">
             <a href="../../index.html">Home<span></span></a>
             <a href="../pages/about-us.html">Our Team<span></span></a>
@@ -44,36 +36,35 @@ flex-wrap: wrap;
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
     </header>
-    <h1>Our Products</h1>
-    <div class="gallery">
-        <div >
-            <a target="New Product" href="airpods home.png">
-              <img src="../images/airpods home.png" alt="Airpods" width="200" >
-            </a>
-            <div class="desc">Apple's iconic wireless earbuds.</div>
+    <main id="form">
+    <form class="contact" action="action_page.php">
+        <div class="container">
+          <h1>Contact Us</h1>
+          <hr>
+      
+          <label class="contact" for="email"><b>Email</b></label>
+          <input class="contact" type="text" placeholder="Enter Email" name="email" required>
+      
+          <label class="contact" for="order-num"><b>Order Number</b></label>
+          <input class="contact" type="password" placeholder="Order Number" name="order-num" required>
+
+          <label class="contact" for="comments"><b>Comments</b></label>
+          <input class="contact" type="password" placeholder="" name="comments" required> 
+      
+          <div class="clearfix">
+            <button class="contact" type="button" class="cancelbtn">Cancel</button>
+            <button class="contact" type="submit" class="signupbtn">Submit</button>
           </div>
-        
-          <div >
-            <a target="New Product" href="pink headphones.png">
-              <img src="../images/pink headphones.png" alt="Pink Headphones" width="200">
-            </a>
-            <div class="desc"> Pink Apple Headphones</div>
-          </div>
-        
-          <div >
-            <a target="New Product" href="laptop home.png">
-              <img src="../images/laptop home.png" alt="Laptop" width="200">
-            </a>
-            <div class="desc">Windows Laptop</div>
-          </div>
-    </div>
+        </div>
+      </form>
+    </main>
     <footer>
         <div class="flex-footer">ORDERS
             <a href="#">Tracking</a>
             <a href="#">Returns</a>
         </div>
         <div class="flex-footer">ABOUT
-            <a href="../pages/contact-us.html">Contact Us</a>
+            <a href="#">Contact Us</a>
             <a href="#">About Us</a>
             <a href="#">Our Team</a>
             <a href="#">Careers</a>

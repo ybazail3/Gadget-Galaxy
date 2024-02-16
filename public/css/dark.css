@@ -7,8 +7,12 @@ html {
 }
 
 body {
-    background-color: #2F356D;
+    background-image: url("../images/darkmode_background.png");
     color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -28,11 +32,6 @@ h1 {
     margin: 0 auto;
     padding: 1em;
 }
-  
-/* img#banner {
-    display: block;
-    width: 100%;
-} */
 
 main.wrapper {
     background-color: #2F356D;
@@ -141,17 +140,45 @@ form {
     flex-direction: column;
   }
 
+  div.preview {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.main-section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.one {
+    font-size: 80px;
+    line-height: 1.1;
+    font-weight: 350;
+}
+
+.two {
+    font-size: 30px;
+    line-height: 1;
+    padding-left: 40px;
+}
+
+img.three {
+    display: flex;
+    justify-content: left;
+}
+
 footer {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    justify-items: center;
-    clear: both;
+    align-items: center;
     text-align: center;
     padding: 30px;
-    color: #fff;
+    color: #2F356D;
+    background-color: #d5d5d538;
 }
+
 
 .flex-footer {
     display: flex;
