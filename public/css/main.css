@@ -4,11 +4,11 @@ html {
     font-family: 'Ubuntu', sans-serif;
     font-size: 0.95em;
     line-height: 1.5em;
-    background-image: url("../images/lightmode_background.png");
     width: 100%;
 }
 
 body {
+    background-image: url("../images/lightmode_background.png");
     color: #2F356D;
     margin: 0;
     display: flex;
