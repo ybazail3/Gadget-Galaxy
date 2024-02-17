@@ -58,6 +58,11 @@ button.signup:hover {
 }
 
 /* Extra styles for the cancel button */
+<<<<<<< HEAD
+.cancelbtn {
+  background-color: #5d5d5db9;
+  padding: 14px 20px;
+=======
 button.cancelbtn {
   background-color: rgb(146, 137, 137);
   color: #fff;
@@ -68,6 +73,7 @@ button.cancelbtn {
   width: 100%;
   opacity: 0.9;
   transition: .5s;
+>>>>>>> 686629259d3f09281f331b48ba7d9ef1985ceed1
 }
 
 /* Float cancel and signup buttons and add an equal width */
