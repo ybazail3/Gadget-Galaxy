@@ -134,9 +134,9 @@
 
 /* PHONE */
     @media all and (max-width:500px) {
-        .topnav {
-            /* Remove width: 100%; */
-        }
+        /* .topnav {
+            width: 100%;
+        } */
     
         header .wrapper {
             width: 100%;

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (dTheme) {
       themeStylesheet.href = 'public/css/dark.css';
       document.querySelector('#nav-stylesheet').href = 'public/css/dark-nav.css';
-      logoImage.src = 'public/images/logo-dark.png'; // Change the image source
+      logoImage.src = 'public/images/logo.png'; // Change the image source
     } else {
       themeStylesheet.href = 'public/css/main.css';
       document.querySelector('#nav-stylesheet').href = 'public/css/nav.css';
