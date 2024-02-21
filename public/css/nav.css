@@ -1,32 +1,8 @@
 /* Global rules */
 
-.topnav {
-    margin: auto;
-    overflow: auto;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.topnav a {
-    display: flex;
-    color: #fff;
-    text-align: center;
-    padding: 15px 15px;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-size: 16px;
-    color: #2F356D;
-}
-
-/* .topnav a.hover, .active {
-    background-color: #f5aa7c;
-} */
-
-.topnav .icon {
+.icon {
     display: none;
-}
+} 
 
 /* Responsive rules - apply when screen width is less than 1200px */
 
@@ -61,20 +37,140 @@
 /* DESKTOP */
 @media all and (min-width:1200px) {
     .topnav {
-        width: 80%;
+        width: 100%;
     }
-}
+
+    img#logo-img {
+        margin: 15px 0px 0px 30px;
+    }
+
+  nav#myTopnav.topnav {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+
+    }
+
+    header div.wrapper nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    header .wrapper {
+        width: 100%;
+        padding: 0;
+        /* justify-content: space-between;  */
+    }
+
+    header nav ul {
+        overflow: hidden;
+        list-style: none;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }  
+
+    header nav ul li {
+        float: left;
+        width: auto;
+        color: #fff;
+        justify-content: space-around;
+        display: block;
+        margin: 25px;
+    }  
+} 
+
 
 /* TABLET */
 @media all and (min-width:501px) and (max-width:1199px) {
-    .topnav {
+    /* .topnav {
         width: 90%;
+    } */
+
+    .topnav {
+         width: 100%; 
     }
+
+    header .wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    header nav ul {
+        overflow: hidden;
+        background: #ffffff2b;
+        list-style: none;
+        height: 0;
+        display: flex; /* Add display: flex; */
+        flex-direction: column; /* Add flex-direction: column; */
+    }
+
+    header nav ul.open {
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav ul li {
+        /* Remove float: none; */
+        text-align: left;
+        /* Remove width: 100%; */
+        margin: 0;
+        flex-grow: 1; /* Add flex-grow: 1; */
+    }    
+
+    header nav ul li {
+        background-color: #2f356d4d;
+        padding: 10px;
+        border-bottom: 1px solid #2f356d9a;
+        display: block;
+        margin: 0;
+    } 
 }
 
 /* PHONE */
-@media all and (max-width:500px) {
-    .topnav {
-        width: 100%;
+    @media all and (max-width:500px) {
+        .topnav {
+            /* Remove width: 100%; */
+        }
+    
+        header .wrapper {
+            width: 100%;
+            padding: 0;
+        }
+    
+        header nav ul {
+            overflow: hidden;
+            background: #ffffff2b;
+            list-style: none;
+            height: 0;
+            display: flex; /* Add display: flex; */
+            flex-direction: column; /* Add flex-direction: column; */
+        }
+    
+        header nav ul.open {
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+    
+        header nav ul li {
+            /* Remove float: none; */
+            text-align: left;
+            /* Remove width: 100%; */
+            margin: 0;
+            flex-grow: 1; /* Add flex-grow: 1; */
+        }    
+    
+        header nav ul li {
+            background-color: #2f356d4d;
+            padding: 10px;
+            border-bottom: 1px solid #2f356d9a;
+            display: block;
+            margin: 0;
+        } 
     }
-}
