@@ -17,8 +17,28 @@
     rel="stylesheet">
 </head>
 
-<!--added logo styling to move the logo to the left of the pages-->
 <style>
+  div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #a412dd9a;
+    border-radius: 25px;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
   .logo {
     width: 30px;
     height: 30px;
@@ -28,97 +48,82 @@
 
 <body>
   <header>
-    <a href="index.html" id="logo"><img src="public/images/icon.png" id="logo-img" alt=logo height="80" width="200"></a>
-    <nav class="topnav" id="myTopnav">
-      <a href="index.html">Home<span></span></a>
-      <a href="public/pages/about-us.html">Our Team<span></span></a>
-      <a href="public/pages/products.html">Our Products<span></span></a>
-      <a href="public/pages/sale.html" id="dealsflash">Deals Of The Day<span></span></a>
-      <a href="public/pages/signup.html">Sign Up<span></span></a>
-      <a href="public/pages/cart.html"><i class="fa-solid fa-cart-shopping"><span></span></i></a>
-      <a><div><button id="theme">Theme</button></div><span></span></a>
-      <form class="search" action="#">
-        <input type="text" placeholder="Search" name="search">
-        <button type="submit" id="search"><i class="fa fa-search"></i></button>
-      </form>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-    </nav>
-  </header>
-
-  <style>
-    div.gallery {
-      margin: 5px;
-      float: left;
-      width: 180px;
-    }
-    
-    div.gallery:hover {
-      border: 1px solid #a412dd9a;
-      border-radius: 25px;
-    }
-    
-    div.gallery img {
-      width: 100%;
-      height: auto;
-    }
-    
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-    </style>
-    </head>
-    <body>
-      <div class="main-section">
-        <div id="text">
-    <h1 class="one">Louder & More Clearly</h1>
-    <h2 class="two">With the latest technology that produces clearer<br> sound and louder bass.</h2>
-  </div>
-    <img src="public/images/Gadget Galaxy_mainpagehead.jpg" id="id1" width="700" height="700" class=three">
-  </div>
-  <div><button>See Details</button></div>
-    <div><button>More New Products</button></div>
-    <div class="preview">
-      <div class="gallery">
-        <a target="New Product" href="airpods home.png">
-          <img src="public/images/airpods home.png" alt="Airpods" width="600" height="400">
-        </a>
-        <div class="desc">Apple - In - ear - Airpods</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="New Product" href="pink headphones.png">
-          <img src="public/images/pink headphones.png" alt="Pink Headphones" width="600" height="400">
-        </a>
-        <div class="desc">Apple Airpods Max - Pink</div>
-      </div>
-      
-      <div class="gallery">
-        <a target="New Product" href="laptop home.png">
-          <img src="public/images/laptop home.png" alt="Laptop" width="600" height="400">
-        </a>
-        <div class="desc">Apple MacBook Pro - 14 inch</div>
-      </div>
+    <div class="wrapper">
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" id="logo"><img src="public/images/logo.png" id="logo-img" alt=logo height="80"
+          width="200"></a>
+        <a href="javascript:void(0);" class="icon"</a>&#9776;</a>
+        <ul>
+          <li><a href="index.html">Home<span></span></a></li>
+          <li><a href="public/pages/about-us.html">Our Team<span></span></a></li>
+          <li><a href="public/pages/products.html">Our Products<span></span></a></li>
+          <li><a href="public/pages/sale.html" id="dealsflash">Deals Of The Day<span></span></a></li>
+          <li><a href="public/pages/signup.html">Sign Up<span></span></a></li>
+          <li><a href="public/pages/cart.html"><i class="fa-solid fa-cart-shopping"><span></span></i></a></li>
+          <li><a>
+              <div><button id="theme">Theme</button></div><span></span>
+            </a></li>
+          <li><form class="search" action="#">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit" id="search"><i class="fa fa-search"></i></button>
+          </form>
+          </li>
+        </ul>
+      </nav>
     </div>
+  </header>
+  <div class="main-section">
+    <div id="text">
+      <h1 class="one">Louder & More Clearly</h1>
+      <h2 class="two">With the latest technology that produces clearer<br> sound and louder bass.</h2>
+    </div>
+    <img src="public/images/Gadget Galaxy_mainpagehead.jpg" id="id1" width="700" height="700" class="three">
+  </div>
+  <div><button class="button1">See Details</button></div>
+  <div><button class="button2">More New Products</button></div>
+  <div class="preview">
+    <div class="gallery">
+      <a target="New Product" href="airpods home.png">
+        <img src="public/images/airpods home.png" alt="Airpods" width="600" height="400">
+      </a>
+      <div class="desc">Apple - In - ear - Airpods</div>
+    </div>
+
+    <div class="gallery">
+      <a target="New Product" href="pink headphones.png">
+        <img src="public/images/pink headphones.png" alt="Pink Headphones" width="600" height="400">
+      </a>
+      <div class="desc">Apple Airpods Max - Pink</div>
+    </div>
+
+    <div class="gallery">
+      <a target="New Product" href="laptop home.png">
+        <img src="public/images/laptop home.png" alt="Laptop" width="600" height="400">
+      </a>
+      <div class="desc">Apple MacBook Pro - 14 inch</div>
+    </div>
+  </div>
   <footer>
     <div class="flex-footer">ORDERS
       <a href="#">Tracking</a>
-        <a href="#">Returns</a>
-      </div>
-      <div class="flex-footer">ABOUT
-        <a href="#">Contact Us</a>
-        <a href="#">About Us</a>
-        <a href="#">Our Team</a>
-        <a href="#">Careers</a>
-      </div>
-      <div class="flex-footer">LEGAL
-        <a href="#">Terms & Conditions</a>
-        <a href="#">Privacy Policy</a>
-      </div>
-      <p class="flex-footer">
-        <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights Reserved
-      </p>
-</footer>
+      <a href="#">Returns</a>
+    </div>
+    <div class="flex-footer">ABOUT
+      <a href="public/pages/contact-us.html">Contact Us</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Team</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="flex-footer">LEGAL
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p class="flex-footer">
+      <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights Reserved
+    </p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="public/scripts/nav.js"></script>
   <script src="public/scripts/app.js"></script>
   <script src="public/scripts/copyright.js"></script>
 </body>

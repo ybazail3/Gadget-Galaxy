@@ -7,6 +7,7 @@ main {
     color: #2F356D;
 }
 
+
 form.signup {
     display: flex;
     justify-content: center;
@@ -16,9 +17,16 @@ form.signup {
     border-radius: 1%;
 }
 
+hr {
+    border-color: #2F356D;
+}
+
+h1 {
+   white-space: nowrap;
+}
 
 /* Full-width input fields */
-  input.signup[type=text], [type=email], input[type=password] {
+  input.contact[type=text], input[type=password] {
   width: 90%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -30,18 +38,18 @@ form.signup {
   align-self: center;
 }
 
-input.signup[type=text]:focus, input[type=password]:focus {
+input.contact[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-hr.signup {
+hr.contact {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
 /* Set a style for all buttons */
-button.signup {
+button.contact {
   background-color: #a412dd9a;
   color: #fff;
   padding: 14px 20px;
@@ -50,28 +58,20 @@ button.signup {
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
-  transition: .5s;
 }
 
-button.signup:hover {
+button.contact:hover {
   opacity:1;
 }
 
 /* Extra styles for the cancel button */
-button.cancelbtn {
-  background-color: rgb(146, 137, 137);
-  color: #fff;
+.cancelbtn {
+  background-color: #5d5d5db9;
   padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-  transition: .5s;
 }
 
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+/* Float cancel and contact buttons and add an equal width */
+.cancelbtn, .contactbtn {
   float: left;
   width: 50%;
 }
@@ -82,15 +82,15 @@ button.cancelbtn {
 }
 
 /* Clear floats */
-/* .clearfix::after {
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
-}*/
+}
 
-/* Change styles for cancel button and signup button on extra small screens */
+/* Change styles for cancel button and contact button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+  .cancelbtn, .contactbtn {
     width: 100%;
   }
 }
