@@ -20,21 +20,29 @@
 
 <body>
     <header>
-        <a href="../../index.html" class="active" id="logo"><img src="../images/logo.png" id="logo-img" height="80" width="200""></a>
-        <nav class="topnav" id="myTopnav">
-            <a href="../../index.html">Home<span></span></a>
-            <a href="../pages/about-us.html">Our Team<span></span></a>
-            <a href="../pages/products.html">Our Products<span></span></a>
-            <a href="../pages/sale.html" id="dealsflash">Deals Of The Day<span></span></a>
-            <a href="../pages/signup.html">Sign Up<span></span></a>
-            <a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"></i><span></span></a>
-            <a><div><button id="theme">Theme</button></div><span></span></a>
-            <form class="search" action="#">
-                <input type="text" placeholder="Search" name="search">
-                <button type="submit" id="search"><i class="fa fa-search"></i></button>
-            </form>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-        </nav>
+        <div class="wrapper">
+            <nav class="topnav" id="myTopnav">
+              <a href="../../index.html" id="logo"><img src="../images/logo.png" id="logo-img" alt=logo height="80"
+                width="200"></a>
+              <a href="javascript:void(0);" class="icon"</a>&#9776;</a>
+              <ul>
+                <li><a href="../../index.html">Home<span></span></a></li>
+                <li><a href="../pages/about-us.html">Our Team<span></span></a></li>
+                <li><a href="../pages/products.html">Our Products<span></span></a></li>
+                <li><a href="../pages/sale.html" id="dealsflash">Deals Of The Day<span></span></a></li>
+                <li><a href="../pages/signup.html">Sign Up<span></span></a></li>
+                <li><a href="../pages/cart.html"><i class="fa-solid fa-cart-shopping"><span></span></i></a></li>
+                <li><a>
+                    <div><button id="theme">Theme</button></div><span></span>
+                  </a></li>
+                <li><form class="search" action="#">
+                  <input type="text" placeholder="Search" name="search">
+                  <button type="submit" id="search"><i class="fa fa-search"></i></button>
+                </form>
+                </li>
+              </ul>
+            </nav>
+          </div>
     </header>
     <main id="form">
     <form class="contact" action="action_page.php">
@@ -77,6 +85,8 @@
             <small>&copy; 2024-<span id="this-year"></span> by Group 2, All Rights Reserved
         </p>
     </footer>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="public/scripts/nav.js"></script>
     <script src="../scripts/copyright.js"></script>
     <script src="../scripts/pages-theme.js"></script>
 </body>
