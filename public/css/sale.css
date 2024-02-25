@@ -84,16 +84,62 @@
         margin-top: -380px;
     }
 
-    @media screen and (min-width: 800px) {
-        .deals-table {
-          flex-direction: column;
-          padding: 1rem 0;
-          scroll-snap-type: y mandatory;
-          overflow-y: scroll;
-          height: 450px;
-        }
-      
-        .table-item {
-          scroll-snap-align: start;
-        }
-      }
+
+
+
+/* CSS responsive for tablet view */
+@media screen and (max-width: 768px) {
+    .deals-page {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .tablet-sales {
+      width: 0%;
+      height: auto;
+    }
+  
+    .info1,
+    .info2 {
+      text-align: center;
+      margin-bottom: 900px;
+    }
+  
+    table {
+      width: 100%;
+      margin-top: 350px;
+    }
+  }
+  
+  /* CSS responsive for mobile view */
+  @media screen and (max-width: 480px) {
+    .tablet-sales {
+      width: 70%;
+    }
+
+    .text1 {
+        font-size: 40px;
+        text-align: right;
+    }
+  
+    .info1 {
+      text-align: right;
+      margin-top: 80px;
+    }
+
+    .this-week {
+        text-align: right;
+       text-align: center;
+       margin-top: 300px;
+    }
+
+    .info2 {
+        margin-top: 120px;
+        margin-right: -200px
+    }
+  
+    table {
+      width: 100%;
+    }
+  }
+  
