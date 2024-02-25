@@ -48,26 +48,26 @@
     <!-- Created a div for the audio element. Created a caption for the title of the song and the musician. The autoplay attribute is for the 
     music to start playing when the user navigates to it & the muted attribute is that the music is muted until user changes to unmute.
     We added a path to our audio file. Line 38 is if the browser does not support the audio element it will display that text instead. -->
-    <div>
+    <!-- <div>
         <figcaption>Listen to Daydream by lkoliks</figcaption>
         <audio controls autoplay muted>
             <source src="../audio/Ikoliks - Daydream.mp3">
             Your browser does not support the audio element.
         </audio>
-    </div>
+    </div> -->
     <!-- Created a table for "events" coming up. We decided to create a sales page for our e-commerce website. The table has all 7 days of
     the week with images and prices. -->
     <div class="deals-page">
         <div>
             <h1 class="text1">Deals Of The Day</h1>
             <h1 class="text2" id="saleFlash">Today's Deal:</h1>
-            <img class="tablet-sales" src="../images/tableet sales page.png" id="tabid" height="450" width="550">
-            <p class="info1">Galaxy Tablet 3</p>
-            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-            <p class="info2">Free Delivery <br>$150.00<br>Save $100 Was: $250.00<br><i class="fa-solid fa-stopwatch"></i> Deal ends at midnight</p>
+            <img class="tablet-sales" id="my-pic" id="tabid" height="450" width="550">
+            <p class="info1" id="item-type"></p>
+            <div id="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="info2" id="price">Free Delivery<br>$150.00<br>Save $100 Was: $250.00<br><i class="fa-solid fa-stopwatch"></i> Deal ends at midnight</p>
         </div>
         <div>
-    <table>
+    <!-- <table>
         <tr class="deals-table">
             <h2>This weeks deals:</h2>
             <th>Monday</th>
@@ -92,7 +92,7 @@
             <th><img class="table-item" src="../images/iphone.jpg"></th>
             <td>iPhone Save $40</td>
         </tr>
-    </table>
+    </table> -->
     </div>
     </div>
 
@@ -119,6 +119,7 @@
     <script src="../scripts/nav.js"></script>
     <script src="../scripts/copyright.js"></script>
     <script src="../scripts/pages-theme.js"></script>
+    <script src="../scripts/sales.js"></script>
 </body>
 
 </html>
