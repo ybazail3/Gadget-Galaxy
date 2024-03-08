@@ -30,6 +30,11 @@ header {
     align-items: center;
 }
 
+.topnav a.icon {
+    height: 25px;
+    width: 25px;
+}
+
 ::selection {
     color: #fff;
     background: #d6d6d6;
