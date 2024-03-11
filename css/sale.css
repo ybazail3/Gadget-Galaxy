@@ -1,0 +1,99 @@
+#saleFlash{
+    animation:blink;
+    animation-duration:2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0%{   color: red;   }
+    47%{   color: rgb(200, 0, 255); }
+    62%{   color: transparent; }
+    97%{   color:transparent; }
+    100%{  color: #000;   }
+    }
+
+    @keyframes jumpAnimation {
+        0% {
+            transform: translateY(0);
+        }
+    
+        25% {
+            transform: translateY(-20px);
+        }
+    
+        50% {
+            transform: translateY(0);
+        }
+    
+        75% {
+            transform: translateY(-20px);
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    }
+    
+    #tabid:hover {
+        animation: jumpAnimation 1s infinite;
+        /* Apply the animation */
+        transition: transform 0.3s ease-out;
+        /* Add a smooth transition effect */
+    }
+
+    .text1 {
+        display: inline;
+        font-size: 50px;
+        font-display: bolder;
+        line-height: 2.5;
+    }
+    
+    .text2 {
+        display: block;
+        font-size: 30px;
+        line-height: 0;
+    }
+
+    .tablet-sales {
+        display: block;
+        margin-left: 50px;
+        margin-right: auto;
+    }
+
+    .info1 {
+        font-size: 40px;
+        font-weight: bold;
+        position: absolute;
+        right: 70px;
+        width: 700px;
+        margin-top: -430px;
+    }
+
+    .info2 {
+        position: absolute;
+        right: 70px;
+        width: 700px;
+        margin-top: -340px;
+    }
+
+    .stars {
+        position: absolute;
+        right: 70px;
+        width: 700px;
+        margin-top: -380px;
+    }
+
+    @media screen and (min-width: 800px) {
+        .deals-table {
+          flex-direction: column;
+          padding: 1rem 0;
+          scroll-snap-type: y mandatory;
+          overflow-y: scroll;
+          height: 450px;
+        }
+      
+        .table-item {
+          scroll-snap-align: start;
+        }
+      }
