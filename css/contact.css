@@ -7,6 +7,11 @@ main {
     color: #2F356D;
 }
 
+#map {
+  width: 100%;
+  height: 400px;
+  }
+
 
 form.signup {
     display: flex;
