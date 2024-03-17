@@ -106,5 +106,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector("#item-type").innerHTML = itemType;
     document.querySelector("#stars").innerHTML = stars;
     document.querySelector("#price").innerHTML = price;
+    // document.querySelector("#countdown").innerHTML = countdown;
 
 });
