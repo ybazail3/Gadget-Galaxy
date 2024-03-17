@@ -6,7 +6,7 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -60,7 +60,8 @@
 		<!-- Start Team Section -->
 		<div class="untree_co-section">
 			<div class="container">
-
+				<button ng-click="toggleNgClass = !toggleNgClass" class="btn btn-primary-hover-outline">Team Profile</button>
+  				<div ng-class="{'animationClass' : toggleNgClass}" class="firstJsAnimation alert alert-info">
 				<div class="row mb-5">
 					<div class="col-lg-5 mx-auto text-center">
 						<h2 class="section-title">Our Team</h2>
@@ -132,11 +133,12 @@
 						<img src="images/luam.JPG" class="img-fluid mb-5" id="profile-img">
 						<h3 clas>Luam</h3>
 			<span class="d-block position mb-4">Software Developer</span>
-			<p> >I am Luam Redai, an ambitious student at Seattle Central College, participating in the YearUp program, and also pursuing a Business degree at Northern Virginia Community College. In Seattle, I am enrolled in an Application Development course that offers a profound understanding of contemporary software design and programming methods.</p>
+			<p> I am Luam Redai, an ambitious student at Seattle Central College, participating in the YearUp program, and also pursuing a Business degree at Northern Virginia Community College. In Seattle, I am enrolled in an Application Development course that offers a profound understanding of contemporary software design and programming methods.</p>
 			<p class="mb-0"><a href="#" class="more dark">Learn More <span class="icon-arrow_forward"></span></a></p>
 						</div> 
 					<!-- End Column 4 -->
 				</div>
+			</div>
 			</div>
 		</div>
 		<!-- End Team Section -->
@@ -252,15 +254,15 @@
 						<div class="subscription-form">
 							<h3 class="d-flex align-items-center"><span class="me-1"><img src="images/envelope-outline.svg" alt="Image" class="img-fluid"></span><span>Subscribe to Newsletter</span></h3>
 
-							<form action="#" class="row g-3">
+							<form action="https://postman-echo.com/post" method="POST" class="row g-3">
 								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
+									<input type="text" class="form-control" placeholder="Enter your name" name="name">
 								</div>
 								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
+									<input type="email" class="form-control" placeholder="Enter your email" name="email">
 								</div>
 								<div class="col-auto">
-									<button class="btn btn-primary">
+									<button type="submit" class="btn btn-primary-hover-outline">
 										<span class="fa fa-paper-plane"></span>
 									</button>
 								</div>
@@ -338,6 +340,10 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular-animate.min.js"></script>
+		<script src="scripts/angular.js"></script>
 	</body>
 
 </html>
