@@ -2,7 +2,7 @@
 let myDate = new Date();
 let day = myDate.getDay();
 
-// Created empyt variables that can be replaced in the switch statement
+// Created empty variables that can be replaced in the switch statement
 let myGreeting = "";
 let myColor = "";
 let myPic = "";
@@ -11,15 +11,15 @@ let itemType = "";
 let stars = "";
 let price = "";
 
+// Set the target date and time (year, month (0-11), day, hour, minute, second)
+const targetDate = new Date(2024, 2, 29, 0, 0, 0); // March 29, 2024
+
 // to test the day
 // day = 0;
 
-// This is here so the code inside will run after the page is laoded properly
+// This is here so the code inside will run after the page is loaded properly
 document.addEventListener('DOMContentLoaded', function () {
     
-     // Set the target date and time (year, month (0-11), day, hour, minute, second)
-     const targetDate = new Date(2024, 1, 29, 0, 0, 0);
-
      // Update the countdown display every second
      setInterval(updateCountdown, 1000);
 
@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
           // Update the countdown display
         document.querySelector("#countdown").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
      }
+
 
     // Used a switch case to change the picture, day, star rating, name of item and deal for each day of the week. There is a countdown timer that counts down 24 hours allowing the user to see when the deal is over
     switch (day) {
