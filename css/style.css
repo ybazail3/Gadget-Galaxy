@@ -763,3 +763,25 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+/* Fade-in/Fade-out Animation with CSS: */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in-out {
+  animation: fadeInOut 4s ease-in-out infinite alternate;
+}
+
+/* CSS Transition Fallback: */
+.fade-in-out {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
