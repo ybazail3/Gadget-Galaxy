@@ -1,26 +1,26 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-  const themeStylesheet = document.querySelector('#theme-stylesheet');
+  const themeStylesheetLight = document.querySelector('#theme-stylesheet-light');
+  const themeStylesheetDark = document.querySelector('#theme-stylesheet-dark');
   const themeButton = document.querySelector('#theme');
-  const logoImage = document.querySelector('#logo-img');
 
-  // Added event listener to toggle in between light and dark
+  // Disable dark theme stylesheet by default
+  themeStylesheetDark.disabled = true;
+
   themeButton.addEventListener('click', function () {
     document.body.classList.toggle('dark');
 
-    const dTheme = document.body.classList.contains('dark');
-    themeButton.innerHTML = dTheme ? 'Light' : 'Dark';
+    const isDarkTheme = document.body.classList.contains('dark');
+    themeButton.innerHTML = isDarkTheme ? 'Light' : 'Dark';
 
-     // if statement is the theme contains dark then use dark css else use main css which is light mode
-    if (dTheme) {
-      themeStylesheet.href = '../css/dark.css';
-      document.querySelector('#nav-stylesheet').href = '../css/dark-nav.css';
-      logoImage.src = '../images/logo-dark.png'; // Change the image source
+    // Toggle between light and dark theme stylesheets
+    if (isDarkTheme) {
+      themeStylesheetLight.disabled = true; // Disable light theme stylesheet
+      themeStylesheetDark.disabled = false; // Enable dark theme stylesheet
     } else {
-      themeStylesheet.href = '../css/main.css';
-      document.querySelector('#nav-stylesheet').href = '../css/nav.css';
-      logoImage.src = '../images/logo.png'; // Change the image source back to the original
+      themeStylesheetLight.disabled = false; // Enable light theme stylesheet
+      themeStylesheetDark.disabled = true; // Disable dark theme stylesheet
     }
   });
 });
