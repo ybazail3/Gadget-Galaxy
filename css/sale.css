@@ -42,7 +42,7 @@
         /* Add a smooth transition effect */
     }
 
-    .text1 {
+    /* .text1 {
         display: inline;
         font-size: 50px;
         font-display: bolder;
@@ -82,13 +82,13 @@
         right: 70px;
         width: 700px;
         margin-top: -380px;
-    }
+    } */
 
 
 
 
 /* CSS responsive for tablet view */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .deals-page {
       display: flex;
       flex-direction: column;
@@ -111,7 +111,7 @@
     }
   }
   
-  /* CSS responsive for mobile view */
+  /* CSS responsive for mobile view 
   @media screen and (max-width: 480px) {
     .tablet-sales {
       width: 70%;
@@ -142,4 +142,4 @@
       width: 100%;
     }
   }
-  
+   */
