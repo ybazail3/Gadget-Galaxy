@@ -42,6 +42,10 @@
         /* Add a smooth transition effect */
     }
 
+    #countdown {
+        font-size: x-large;
+    }
+
     /* .text1 {
         display: inline;
         font-size: 50px;

@@ -30,8 +30,11 @@ p#price.info2 {
   color: #fff;
 }
 
-p.info1#item-type {
+div p.info1#item-type {
   color: #fff;
+  padding: 0;
+  margin: 0;
+  font-size: x-large;
 }
 
 
